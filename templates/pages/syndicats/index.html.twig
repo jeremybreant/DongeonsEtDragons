@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bureau des syndicats{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="d-flex flex-row">
+            <img class="p-2" style="width: 20%;" src="/img/syndicat_logo.png" alt="Logo des syndicats">
+            <h1 class="p-2 align-self-end">Bureau des syndicats</h1>
+        </div>
+        <p class="mt-4">En attente de l'image du bureau des syndicats :</p>
+        <a href="{{ path('app_syndicats_cac') }}" class="list-group-item list-group-item-action">➤ Corps à corps</a>
+        <a href="{{ path('app_syndicats_caster') }}" class="list-group-item list-group-item-action">➤ Casters</a>
+        <a href="{{ path('app_syndicats_revendication') }}" class="list-group-item list-group-item-action mt-4">➤ Revendications</a>
+    </div>
+{% endblock %}
